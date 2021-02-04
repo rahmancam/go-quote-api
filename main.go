@@ -14,11 +14,11 @@ import (
 
 // db constants
 const (
-	DBHost     = "DBHost"
-	DBUser     = "DBUser"
-	DBPassword = "DBPassword"
-	DBName     = "DBName"
-	Migration  = `CREAT TABLE IF NOT EXISTS Quote (
+	DBHost     = "DB_HOST"
+	DBUser     = "DB_USER"
+	DBPassword = "DB_PASSWORD"
+	DBName     = "DB_NAME"
+	Migration  = `CREATE TABLE IF NOT EXISTS Quote (
 		id serial PRIMARY KEY,
 		author text NOT NULL,
 		content text NOT NULL,
@@ -55,7 +55,7 @@ func GetQuotes() ([]Quote, error) {
 		results = append(results, Quote{Author: author, Content: content, CreatedAt: createdAt})
 	}
 
-	return nil, nil
+	return results, nil
 }
 
 // AddQuote - add quote to db
