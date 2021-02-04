@@ -1,1 +1,1 @@
-# go-quote-api
+# Go Quote API
