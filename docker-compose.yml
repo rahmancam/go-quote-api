@@ -36,6 +36,8 @@ services:
       - db
     links: 
       - db
+    labels:
+      kompose.service.type: LoadBalancer
 
 networks:
   quotenet:

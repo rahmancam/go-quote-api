@@ -1,5 +1,5 @@
 # Go Quote API
-A simple golang quote API server
+A simple golang quote API server (Docker and Kubernetes)
 
 ## Run
 - To run the api server, run
@@ -27,4 +27,11 @@ docker-compose up
     "author": "Jalal ad-Din Muhammad Rumi",
     "content": "What you seek is seeking you."
 }]
+```
+
+## Deployment (Kubernetes cluster)
+- To deploy rum
+```sh
+chmod +x kubectl.sh
+./kubectl.sh
 ```
